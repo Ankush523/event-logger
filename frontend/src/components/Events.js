@@ -20,7 +20,7 @@ const Events = () => {
 
     return ( 
         <div className='flex flex-col w-screen h-fit items-center justify-center mt-7' >
-            <p className='text-white text-3xl font-bold mb-3' >Events List</p>
+            <p className='text-white text-4xl font-bold mb-3' >Events List</p>
             <button className='text-md text-slate-900 bg-white px-2 py-1 rounded-xl' onClick={()=>getEvents()} >Refresh List</button>
             {
                 events.map((event, index) => {

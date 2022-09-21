@@ -19,6 +19,9 @@ router.post('/post', async (req, res) => {
 })
 
 router.get('/getAll', async (req, res) => {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
     try{
         const data = await Model.find();
         res.json(data)

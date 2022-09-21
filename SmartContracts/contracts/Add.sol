@@ -7,8 +7,8 @@ contract Add{
 
     event Addition(address owner, uint sum);
 
-    function getSum(uint n1,uint n2 )public{
-        sum = n1 + n2;
+    function getSum(uint a,uint b )public{
+        sum = a + b;
         emit Addition(msg.sender, sum);
     }
 
